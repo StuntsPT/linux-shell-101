@@ -74,7 +74,7 @@
             </aside>
             
             <aside class="page_number">
-              1/2
+              1/9
             </aside>
           </footer>
         </div>
@@ -85,14 +85,150 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h1>A shell e "porque é que eu preciso disto"?</h1></header>
+            <header><h1>A shell e "porque é que eu preciso disto" ?</h1></header>
             
             
-            <section><ul>
+            <section><h2>O que é:</h2>
+<ul>
 <li>Uma interface com o computador via "linha de comandos"</li>
 <li><em>bash</em> (ksh zsh fish dash etc...)</li>
 <li>Acede-se através de um "terminal"</li>
 <li>Apesar de tudo o rato também é útil na shell</li>
+</ul>
+<p></br></p>
+<h2>Para que é que preciso dela?</h2>
+<ul>
+<li>Servidores HPC</li>
+<li>Acesso remoto simples</li>
+<li>Interface <strong>simples</strong></li>
+<li>Pode parecer que não, mas facilita imenso</li>
+</ul>
+<h2>Não acreditam? Vejam.</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/9
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>O <em>prompt</em></h1></header>
+            
+            
+            <section><p><code>user@machine:~$</code></p>
+<p><img alt="Prompt image" src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt.gif" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/9
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Navegação e orientação</h1></header>
+            
+            
+            <section><h2>Pensem na vossa shell como um gestor de ficheiros</h2>
+<ol>
+<li>Onde é que eu estou?</li>
+<li>O que é que há aqui?</li>
+<li>Como é que me movimento?</li>
+</ol>
+<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+
+<p><code>pwd</code></p>
+<p><code>ls</code></p>
+<p><code>cd</code></p>
+<h2>Significado:</h2>
+<ol>
+<li><font color="red">p</font>rint <font color="red">w</font>orking <font color="red">d</font>irectory</li>
+<li><font color="red">l</font>i<font color="red">s</font>t</li>
+<li><font color="red">c</font>all <font color="red">d</font>irectory</li>
+</ol></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/9
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>O vossos novos melhores amigos</h1></header>
+            
+            
+            <section><p><code>man nome_do_programa</code></p>
+<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+
+<ul>
+<li><strong>TODOS</strong> os programas <em>builtin</em> na shell (coreutils) têm um</li>
+<li>Alguns outros também</li>
+</ul>
+<p><code>man ls</code></p>
+<p><code>whatis</code></p>
+<div style="float: right"><img src="assets/Tab-Key.png" /></div>
+
+<h2>Tecla "Tab"</h2>
+<ul>
+<li>Completa o que estão a escrever</li>
+<li>Com uma ou duas "<em>keypress</em>"</li>
+</ul>
+<h2>Teclas ↓ e ↑</h2>
+<ul>
+<li>Navegam pela lista de comandos anteriores</li>
 </ul></section>
             
           </div>
@@ -109,16 +245,107 @@
             </aside>
             
             <aside class="page_number">
-              2/2
+              5/9
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: class.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
+            
+            <header><h1>Caminhos (path) e convenções</h1></header>
+            
+            
+            <section><h2>Os caminhos podem ser absolutos ou relativos</h2>
+<h2>Ex. de caminhos absolutos</h2>
+<p><code>/etc/fstab</code></p>
+<p><code>~/Downloads/ficheiro.txt</code></p>
+<h2>Ex. de caminhos relativos</h2>
+<p><code>Downloads/ficheiro.txt</code></p>
+<p><code>./ficheiro.txt</code></p>
+<h2>Convenções comuns</h2>
+<ul>
+<li><font color="red">~</font> -&gt; <em>home dir</em>, por ex. <code>/home/francisco</code></li>
+<li><font color="red">./</font> -&gt; "Aqui"</li>
+<li><font color="red">../</font> -&gt; Um diretório abaixo</li>
+<li><font color="red">../../</font> -&gt; Dois diretórios abaixo</li>
+<li><font color="red">.ficheiro</font> -&gt; Ficheiro "escondido"</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/9
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Navegação II</h1></header>
+            
+            
+            <section><ol>
+<li>Como é que eu crio um novo diretório (pasta)?</li>
+<li>Como é que eu apago um novo diretório?</li>
+<li>Como é que eu crio um novo ficheiro?</li>
+<li>Como é que eu copio um ficheiro?</li>
+<li>Como é que eu movo um ficheiro?</li>
+<li>Como é que eu apago um ficheiro</li>
+</ol>
+<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+
+<p><code>mkdir dir_name</code></p>
+<p><code>rmdir dir_name</code></p>
+<p><code>touch file_name</code></p>
+<p><code>cp origem destino</code></p>
+<p><code>mv origem destino</code></p>
+<p><code>rm file_name</code></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/9
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1><center>Intervalo!</center></h1></header>
             
             
           </div>
@@ -130,8 +357,40 @@
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /2
+              8/9
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Permissões</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/9
             </aside>
           </footer>
         </div>
@@ -152,8 +411,50 @@
       
       
       <tr id="toc-row-2">
-        <th><a href="#slide2">A shell e "porque é que eu preciso disto"?</a></th>
+        <th><a href="#slide2">A shell e "porque é que eu preciso disto" ?</a></th>
         <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">O <em>prompt</em></a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Navegação e orientação</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">O vossos novos melhores amigos</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Caminhos (path) e convenções</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Navegação II</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide8"><center>Intervalo!</center></a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Permissões</a></th>
+        <td><a href="#slide9">9</a></td>
       </tr>
       
       
