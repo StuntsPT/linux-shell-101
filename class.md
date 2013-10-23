@@ -244,9 +244,151 @@ $PATH
 
 ##Correr programas
 
-* É boa prática colocar os programas a correr no $PATH
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+* É boa prática colocar os programas num localização no $PATH
 
 ``$ echo $PATH``
 
+* /bin/
+* /usr/bin/
+* /usr/local/bin/
+* ~/bin
+
+## E se o programa não estiver no $PATH?
+
+``$ ~/cool_stuff/o_meu_programa``
+
+##ou
+
+``$ cd ~/cool_stuff``
+
+``$ ./o_meu_programa``
 
 ---
+
+$PATH II
+========
+
+##Como é que eu mudo isto?
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+##Lembram-se das ``env vars``?
+
+``$ echo $PATH``
+
+``$ PATH=$PATH:~/bin``
+
+``$ echo $PATH``
+
+##E para o tornar permanente?
+
+##Sim, acrescenta-se ao ``~/.bashrc`` !
+
+---
+
+Mais sobre programas
+====================
+
+##Correr programas com argumentos
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+``$ ls -l``
+
+##Cada argumento é separado por um espaço
+
+##Normalmente dá-se mais que um argumentos
+
+``$ ls -l -a``
+
+``$ ls -la``
+
+##<font color="red">Mensagem a reter:</font> <font color="blue"> Os argumentos são separados por espaços e os espaços separam sempre argumentos!</font>
+
+##E espaços em nomes de ficheiros? Como em ``ficheiro com espacos.fasta``.
+
+##Os caracteres especiais têm de ser "escapados":
+
+``$ cat ficheiro\ com\ espacos.fasta``
+
+##Ou
+
+``$ cat "ficheiro com espacos.fasta"``
+
+---
+
+Se estão a conseguir acompanhar até aqui - parabéns. estão aptos a navegar a shell básica
+=========================================================================================
+
+---
+
+Awessome starts here
+====================
+
+#Ferramentas mais avançadas.
+
+## ``grep sed cat less vim nano``
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+##Exemplos:
+
+``$ cat ficheiro.fasta``
+
+``$ grep ">" ficheiro.fasta``
+
+``$ sed 's/>/+/g' ficheiro.fasta``
+
+``$ less ficheiro.fasta``
+
+##Usem o "q" para sair do ``less``
+
+##O ``vim`` dava sozinho para mais que uma so aula
+
+``$ nano ficheiro.fasta``
+
+---
+
+Acesso remoto
+=============
+
+##Meet ``ssh``
+
+##Significa "<font color="red">s</font>ecure <font color="red">sh</font>ell"
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+``$ ssh user@machine``
+
+##Isto vai abrir um nova shell na máquina a que se ligaram
+
+##O ssh é um programa enorme, com inúmeras aplicações. Vejam a página do manual para terem uma ideia
+
+</br>
+
+#Meet ``scp``
+
+##É como uma fusão do *ssh* com o *cp*
+
+##Significa "<font color="red">s</font>ecure <font color="red">c</font>o<font color="red">p</font>y"
+
+``$ scp user@machine:caminho/para/ficheiro caminho/local``
+
+##Para uma solução mais completa, mas mais complexa, vejam o *rsync*
+
+---
+
+wget
+====
+
+---
+
+A vossa vez!
+============
+
+---
+
+Ladies and gentleman - start your terminals!
+============================================

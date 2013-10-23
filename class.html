@@ -74,7 +74,7 @@
             </aside>
             
             <aside class="page_number">
-              1/12
+              1/20
             </aside>
           </footer>
         </div>
@@ -119,7 +119,7 @@
             </aside>
             
             <aside class="page_number">
-              2/12
+              2/20
             </aside>
           </footer>
         </div>
@@ -151,7 +151,7 @@
             </aside>
             
             <aside class="page_number">
-              3/12
+              3/20
             </aside>
           </footer>
         </div>
@@ -197,7 +197,7 @@
             </aside>
             
             <aside class="page_number">
-              4/12
+              4/20
             </aside>
           </footer>
         </div>
@@ -246,7 +246,7 @@
             </aside>
             
             <aside class="page_number">
-              5/12
+              5/20
             </aside>
           </footer>
         </div>
@@ -290,7 +290,7 @@
             </aside>
             
             <aside class="page_number">
-              6/12
+              6/20
             </aside>
           </footer>
         </div>
@@ -335,7 +335,7 @@
             </aside>
             
             <aside class="page_number">
-              7/12
+              7/20
             </aside>
           </footer>
         </div>
@@ -363,7 +363,7 @@
             </aside>
             
             <aside class="page_number">
-              8/12
+              8/20
             </aside>
           </footer>
         </div>
@@ -410,7 +410,7 @@
             </aside>
             
             <aside class="page_number">
-              9/12
+              9/20
             </aside>
           </footer>
         </div>
@@ -453,7 +453,7 @@
             </aside>
             
             <aside class="page_number">
-              10/12
+              10/20
             </aside>
           </footer>
         </div>
@@ -505,7 +505,7 @@
             </aside>
             
             <aside class="page_number">
-              11/12
+              11/20
             </aside>
           </footer>
         </div>
@@ -520,10 +520,23 @@
             
             
             <section><h2>Correr programas</h2>
+<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+
 <ul>
-<li>É boa prática colocar os programas a correr no $PATH</li>
+<li>É boa prática colocar os programas num localização no $PATH</li>
 </ul>
-<p><code>$ echo $PATH</code></p></section>
+<p><code>$ echo $PATH</code></p>
+<ul>
+<li>/bin/</li>
+<li>/usr/bin/</li>
+<li>/usr/local/bin/</li>
+<li>~/bin</li>
+</ul>
+<h2>E se o programa não estiver no $PATH?</h2>
+<p><code>$ ~/cool_stuff/o_meu_programa</code></p>
+<h2>ou</h2>
+<p><code>$ cd ~/cool_stuff</code></p>
+<p><code>$ ./o_meu_programa</code></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -539,16 +552,99 @@
             </aside>
             
             <aside class="page_number">
-              12/12
+              12/20
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: class.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
+            
+            <header><h1>$PATH II</h1></header>
+            
+            
+            <section><h2>Como é que eu mudo isto?</h2>
+<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+
+<h2>Lembram-se das <code>env vars</code>?</h2>
+<p><code>$ echo $PATH</code></p>
+<p><code>$ PATH=$PATH:~/bin</code></p>
+<p><code>$ echo $PATH</code></p>
+<h2>E para o tornar permanente?</h2>
+<h2>Sim, acrescenta-se ao <code>~/.bashrc</code> !</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Mais sobre programas</h1></header>
+            
+            
+            <section><h2>Correr programas com argumentos</h2>
+<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+
+<p><code>$ ls -l</code></p>
+<h2>Cada argumento é separado por um espaço</h2>
+<h2>Normalmente dá-se mais que um argumentos</h2>
+<p><code>$ ls -l -a</code></p>
+<p><code>$ ls -la</code></p>
+<h2><font color="red">Mensagem a reter:</font> <font color="blue"> Os argumentos são separados por espaços e os espaços separam sempre argumentos!</font></h2>
+<h2>E espaços em nomes de ficheiros? Como em <code>ficheiro com espacos.fasta</code>.</h2>
+<h2>Os caracteres especiais têm de ser "escapados":</h2>
+<p><code>$ cat ficheiro\ com\ espacos.fasta</code></p>
+<h2>Ou</h2>
+<p><code>$ cat "ficheiro com espacos.fasta"</code></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Se estão a conseguir acompanhar até aqui - parabéns. estão aptos a navegar a shell básica</h1></header>
             
             
           </div>
@@ -560,8 +656,179 @@
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /12
+              15/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Awessome starts here</h1></header>
+            
+            
+            <section><h1>Ferramentas mais avançadas.</h1>
+<h2><code>grep sed cat less vim nano</code></h2>
+<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+
+<h2>Exemplos:</h2>
+<p><code>$ cat ficheiro.fasta</code></p>
+<p><code>$ grep "&gt;" ficheiro.fasta</code></p>
+<p><code>$ sed 's/&gt;/+/g' ficheiro.fasta</code></p>
+<p><code>$ less ficheiro.fasta</code></p>
+<h2>Usem o "q" para sair do <code>less</code></h2>
+<h2>O <code>vim</code> dava sozinho para mais que uma so aula</h2>
+<p><code>$ nano ficheiro.fasta</code></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Acesso remoto</h1></header>
+            
+            
+            <section><h2>Meet <code>ssh</code></h2>
+<h2>Significa "<font color="red">s</font>ecure <font color="red">sh</font>ell"</h2>
+<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+
+<p><code>$ ssh user@machine</code></p>
+<h2>Isto vai abrir um nova shell na máquina a que se ligaram</h2>
+<h2>O ssh é um programa enorme, com inúmeras aplicações. Vejam a página do manual para terem uma ideia</h2>
+<p></br></p>
+<h1>Meet <code>scp</code></h1>
+<h2>É como uma fusão do <em>ssh</em> com o <em>cp</em></h2>
+<h2>Significa "<font color="red">s</font>ecure <font color="red">c</font>o<font color="red">p</font>y"</h2>
+<p><code>$ scp user@machine:caminho/para/ficheiro caminho/local</code></p>
+<h2>Para uma solução mais completa, mas mais complexa, vejam o <em>rsync</em></h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>wget</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>A vossa vez!</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: class.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Ladies and gentleman - start your terminals!</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="class.md">class.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/20
             </aside>
           </footer>
         </div>
@@ -644,6 +911,54 @@
       <tr id="toc-row-12">
         <th><a href="#slide12">$PATH</a></th>
         <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">$PATH II</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Mais sobre programas</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide15">Se estão a conseguir acompanhar até aqui - parabéns. estão aptos a navegar a shell básica</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Awessome starts here</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">Acesso remoto</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide18">wget</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-19">
+        <th><a href="#slide19">A vossa vez!</a></th>
+        <td><a href="#slide19">19</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-20">
+        <th><a href="#slide20">Ladies and gentleman - start your terminals!</a></th>
+        <td><a href="#slide20">20</a></td>
       </tr>
       
       
