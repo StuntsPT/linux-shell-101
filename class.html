@@ -28,14 +28,14 @@
     <title>Linux shell 101</title>
     <!-- Styles -->
     
-    <link rel="stylesheet" media="print" href="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/theme/css/print.css">
-    <link rel="stylesheet" media="screen, projection" href="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/theme/css/screen.css">
+    <link rel="stylesheet" media="print" href="theme/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="theme/css/screen.css">
     
     
     <!-- /Styles -->
     <!-- Javascripts -->
     
-    <script type="text/javascript" src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/theme/js/slides.js"></script>
+    <script type="text/javascript" src="theme/js/slides.js"></script>
     
     
     <!-- /Javascripts -->
@@ -56,7 +56,7 @@
             <header><h1>Linux shell 101</h1></header>
             
             
-            <section><p><img alt="454" src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/linux.jpg" /></p>
+            <section><p><img alt="454" src="assets/linux.jpg" /></p>
 <h2><center>Francisco Pina Martins</center></h2>
 <h3><center>24/10/2013</center></h3></section>
             
@@ -135,7 +135,7 @@
             
             <section><p><code>user@machine:~$</code></p>
 <p><code>bash-4.1$</code></p>
-<p><img alt="Prompt image" src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt.gif" /></p></section>
+<p><img alt="Prompt image" src="assets/shell_prompt.gif" /></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -171,7 +171,7 @@
 <li>O que é que há aqui?</li>
 <li>Como é que me movimento?</li>
 </ol>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <p><code>$ pwd</code></p>
 <p><code>$ ls</code></p>
@@ -212,7 +212,7 @@
             
             
             <section><p><code>man nome_do_programa</code></p>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <ul>
 <li><strong>TODOS</strong> os programas <em>builtin</em> na shell (coreutils) têm um</li>
@@ -312,7 +312,7 @@
 <li>Como é que eu movo um ficheiro?</li>
 <li>Como é que eu apago um ficheiro</li>
 </ol>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <p><code>$ mkdir dir_name</code></p>
 <p><code>$ rmdir dir_name</code></p>
@@ -381,7 +381,7 @@
 <p><code>drwxr-xr-x  5 francisco francisco 4096 Oct 22 00:24 Desktop</code></p>
 <p><code>drwxr-xr-x  3 francisco cobig2    4096 2013-05-20 13:55 Databases</code></p>
 <p><code>-rw-r--r-- 1 francisco francisco 4256 Sep 15  2011 Zkill.py</code></p>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <ul>
 <li>user</li>
@@ -425,7 +425,7 @@
             
             
             <section><h2>Ok, e como é que eu mudo isto?</h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <p><code>$ chown user:group ficheiro</code></p>
 <p><code>$ chmod mode ficheiro</code></p>
@@ -468,7 +468,7 @@
             
             
             <section><h2><code>env vars</code></h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <div class="highlight"><pre><span class="lineno">1</span> <span class="nv">i</span><span class="o">=</span><span class="s2">&quot;ola&quot;</span>
 <span class="lineno">2</span> <span class="nb">echo</span> <span class="nv">$i</span>
@@ -520,7 +520,7 @@
             
             
             <section><h2>Correr programas</h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <ul>
 <li>É boa prática colocar os programas num localização no $PATH</li>
@@ -567,7 +567,7 @@
             
             
             <section><h2>Como é que eu mudo isto?</h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <h2>Lembram-se das <code>env vars</code>?</h2>
 <p><code>$ echo $PATH</code></p>
@@ -605,7 +605,7 @@
             
             
             <section><h2>Correr programas com argumentos</h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <p><code>$ ls -l</code></p>
 <h2>Cada argumento é separado por um espaço</h2>
@@ -678,7 +678,7 @@
             
             <section><h1>Ferramentas mais avançadas.</h1>
 <h2><code>grep sed cat less vim nano</code></h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <h2>Exemplos:</h2>
 <p><code>$ cat ficheiro.fasta</code></p>
@@ -719,7 +719,7 @@
             
             <section><h2>Meet <code>ssh</code></h2>
 <h2>Significa "<font color="red">s</font>ecure <font color="red">sh</font>ell"</h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <p><code>$ ssh user@machine</code></p>
 <h2>Isto vai abrir um nova shell na máquina a que se ligaram</h2>
@@ -760,7 +760,7 @@
             
             
             <section><h2>O wget é uma ferramenta para efetuar downloads via linha de comandos</h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <h2>É extremamente útil num servidor remoto sem acesso a um browser</h2>
 <p><code>$ wget http://exemplo.com/ficheiro_fixe.txt</code></p>
@@ -798,7 +798,7 @@
             
             
             <section><h2>.zip</h2>
-<div style="float: right"><img src="file:///home/francisco/Dropbox/Science/Talks/linux-shell-101/assets/shell_prompt_small.gif" /></div>
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
 <p><code>$ unzip ficheiro.zip</code></p>
 <h2>.tar.gz</h2>
