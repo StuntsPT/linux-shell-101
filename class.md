@@ -186,19 +186,19 @@ Permissões II
 
 ``$ chmod mode ficheiro``
 
-##Usamos as somas dos valores
+##Usamos as somas dos valores...
 
-1 - execute only
+5 - read&execute (4+1)
 
-4 - read only
+6 - read&write (4+2)
 
-5 - read&execute
+7 - read,write&execute (4+2+1)
 
-6 - read&write
+##... em trios de UGO (<font color="red">U</font>ser<font color="red">G</font>roup<font color="red">O</font>thers):
 
-7 - read,write&execute
+``777 ou 755 ou 640``
 
-##Ou um valor verbal
+##Ou um valor "verbal"
 
 ``$ chmod +x ficheiro``
 ``$ chmod o-w ficheiro``
@@ -382,6 +382,16 @@ Acesso remoto
 
 wget
 ====
+
+##O wget é uma ferramenta para efetuar downloads via linha de comandos
+
+##É extremamente útil num servidor remoto sem acesso a um browser
+
+``$ wget http://exemplo.com/ficheiro_fixe.txt``
+
+##Pode ser usado para descarregar a internet inteira!
+
+##Uma alternativa popular é o ``curl``
 
 ---
 

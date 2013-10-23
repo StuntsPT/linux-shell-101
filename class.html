@@ -429,13 +429,13 @@
 
 <p><code>$ chown user:group ficheiro</code></p>
 <p><code>$ chmod mode ficheiro</code></p>
-<h2>Usamos as somas dos valores</h2>
-<p>1 - execute only</p>
-<p>4 - read only</p>
-<p>5 - read&amp;execute</p>
-<p>6 - read&amp;write</p>
-<p>7 - read,write&amp;execute</p>
-<h2>Ou um valor verbal</h2>
+<h2>Usamos as somas dos valores...</h2>
+<p>5 - read&amp;execute (4+1)</p>
+<p>6 - read&amp;write (4+2)</p>
+<p>7 - read,write&amp;execute (4+2+1)</p>
+<h2>... em trios de UGO (<font color="red">U</font>ser<font color="red">G</font>roup<font color="red">O</font>thers):</h2>
+<p><code>777 ou 755 ou 640</code></p>
+<h2>Ou um valor "verbal"</h2>
 <p><code>$ chmod +x ficheiro</code>
 <code>$ chmod o-w ficheiro</code></p></section>
             
