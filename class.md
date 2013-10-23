@@ -25,7 +25,7 @@ A shell e "porque é que eu preciso disto" ?
 * Servidores HPC
 * Acesso remoto simples
 * Interface **simples**
-* Pode parecer que não, mas facilita imenso
+* Automatização e reprodutibilidade de processos
 
 ##Não acreditam? Vejam.
 
@@ -326,7 +326,7 @@ Se estão a conseguir acompanhar até aqui - parabéns. Estão aptos a navegar a
 
 ---
 
-Awessome starts here
+Awesome starts here
 ====================
 
 #Ferramentas mais avançadas.
