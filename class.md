@@ -299,11 +299,13 @@ Mais sobre programas
 
 ##Cada argumento é separado por um espaço
 
-##Normalmente dá-se mais que um argumentos
+##Normalmente dá-se mais que um argumento
 
-``$ ls -l -a``
+``$ cp origem destino``
 
-``$ ls -la``
+##Exemplo de um argumento comum e extremamente importante
+
+``$ cp --help``
 
 ##<font color="red">Mensagem a reter:</font> <font color="blue"> Os argumentos são separados por espaços e os espaços separam sempre argumentos!</font>
 
@@ -319,7 +321,7 @@ Mais sobre programas
 
 ---
 
-Se estão a conseguir acompanhar até aqui - parabéns. estão aptos a navegar a shell básica
+Se estão a conseguir acompanhar até aqui - parabéns. Estão aptos a navegar a shell básica
 =========================================================================================
 
 ---
@@ -385,18 +387,60 @@ wget
 
 ##O wget é uma ferramenta para efetuar downloads via linha de comandos
 
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
 ##É extremamente útil num servidor remoto sem acesso a um browser
 
 ``$ wget http://exemplo.com/ficheiro_fixe.txt``
 
 ##Pode ser usado para descarregar a internet inteira!
 
-##Uma alternativa popular é o ``curl``
+##Uma alternativa popular é o ``curl``:
+
+``$ wget http://odin.fc.ul.pt/bcg/exemplos/sequencias.fasta``
+
+``$ curl http://odin.fc.ul.pt/bcg/exemplos/sequencias.fasta > sequencias.fasta``
+
+---
+
+Descomprimir ficheiros
+======================
+
+##.zip
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+``$ unzip ficheiro.zip``
+
+##.tar.gz
+
+``$ tar xvfz ficheiro.tar.gz``
+
+##.tar.bz2
+
+``$ tar xvfj ficheiro.tar.bz2``
+
+##Para outros formatos - o google é vosso amigo.
 
 ---
 
 A vossa vez!
 ============
+
+1. Descarregem sequencias do NCBI (ou gerem as vossas, como queiram)
+2. Façam um BLASTX local no servidor odin.fc.ul.pt contra uma base de dados de proteínas (/home/databases/nr/)
+3. Gerem o output HTML e abram-no no vosso browser
+
+##username: alunos
+
+##password: nitUkDagwi
+
+* Tudo o que necessitam está nestes slides
+* Usem o programa "blast2" (está instalado e acessivel no $PATH)
+* Usem também o "BLAST++" (têm de o instalar localmente! Está no site do NCBI)
+* A plataforma é GNU/Linux x86_64 (64bit)
+* Leiam a documentação dos programas!
+* Se não tiverem sequencias podem encontrar um exemplo aqui: http://odin.fc.ul.pt/bcg/exemplos/sequencias.fasta
 
 ---
 
