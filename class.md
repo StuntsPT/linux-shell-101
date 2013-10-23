@@ -31,15 +31,19 @@ A shell e "porque é que eu preciso disto" ?
 
 ---
 
-#O *prompt*
+O *prompt*
+==========
 
 ``user@machine:~$``
+
+``bash-4.1$``
 
 ![Prompt image](assets/shell_prompt.gif)
 
 ---
 
-#Navegação e orientação
+Navegação e orientação
+======================
 
 ##Pensem na vossa shell como um gestor de ficheiros
 
@@ -49,11 +53,11 @@ A shell e "porque é que eu preciso disto" ?
 
 <div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
-``pwd``
+``$ pwd``
 
-``ls``
+``$ ls``
 
-``cd``
+``$ cd``
 
 ##Significado:
 
@@ -63,7 +67,8 @@ A shell e "porque é que eu preciso disto" ?
 
 ---
 
-#O vossos novos melhores amigos
+O vossos novos melhores amigos
+==============================
 
 ``man nome_do_programa``
 
@@ -72,9 +77,9 @@ A shell e "porque é que eu preciso disto" ?
 * **TODOS** os programas *builtin* na shell (coreutils) têm um
 * Alguns outros também
 
-``man ls``
+``$ man ls``
 
-``whatis``
+``$ whatis ls``
 
 <div style="float: right"><img src="assets/Tab-Key.png" /></div>
 ##Tecla "Tab"
@@ -88,7 +93,8 @@ A shell e "porque é que eu preciso disto" ?
 
 ---
 
-#Caminhos (path) e convenções
+Caminhos (path) e convenções
+============================
 
 ##Os caminhos podem ser absolutos ou relativos
 
@@ -112,7 +118,8 @@ A shell e "porque é que eu preciso disto" ?
 
 ---
 
-#Navegação II
+Navegação II
+============
 
 1. Como é que eu crio um novo diretório (pasta)?
 2. Como é que eu apago um novo diretório?
@@ -123,17 +130,17 @@ A shell e "porque é que eu preciso disto" ?
 
 <div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
-``mkdir dir_name``
+``$ mkdir dir_name``
 
-``rmdir dir_name``
+``$ rmdir dir_name``
 
-``touch file_name``
+``$ touch file_name``
 
-``cp origem destino``
+``$ cp origem destino``
 
-``mv origem destino``
+``$ mv origem destino``
 
-``rm file_name``
+``$ rm file_name``
 
 ---
 
@@ -141,4 +148,105 @@ A shell e "porque é que eu preciso disto" ?
 
 ---
 
-#Permissões
+Permissões
+==========
+
+##Todos os ficheiros têm uma série de atributos.
+
+``drwxr-xr-x  5 francisco francisco 4096 Oct 22 00:24 Desktop``
+
+``drwxr-xr-x  3 francisco cobig2    4096 2013-05-20 13:55 Databases``
+
+``-rw-r--r-- 1 francisco francisco 4256 Sep 15  2011 Zkill.py``
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+* user
+* group
+* others
+
+##Valores
+
+* <font color="red">r</font>ead (4)
+* <font color="red">w</font>rite (2)
+* e<font color="red">x</font>ecute (1)
+
+``$ groups``
+
+---
+
+Permissões II
+=============
+
+##Ok, e como é que eu mudo isto?
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+``$ chown user:group ficheiro``
+
+``$ chmod mode ficheiro``
+
+##Usamos as somas dos valores
+
+1 - execute only
+
+4 - read only
+
+5 - read&execute
+
+6 - read&write
+
+7 - read,write&execute
+
+##Ou um valor verbal
+
+``$ chmod +x ficheiro``
+``$ chmod o-w ficheiro``
+
+---
+
+Variáveis de ambiente e  outros *goodies*
+=========================================
+
+##``env vars``
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+	!bash
+	i="ola"
+	echo $i
+	echo $USER
+	echo $HOME
+
+##Aliases
+
+	!bash
+	alias ll=ls -l
+	ll
+
+##Para tornar permanente basta adicionar a ``~/.bashrc``
+
+##Unix pipe ``|``
+
+##Podemos "pipar" o resultado de um comando para outro
+
+	!bash
+	du -sm *
+	du -sm *| sort
+	du -sm *| sort -r
+
+##As possibilidades são ilimitadas!
+
+---
+
+$PATH
+=====
+
+##Correr programas
+
+* É boa prática colocar os programas a correr no $PATH
+
+``$ echo $PATH``
+
+
+---
