@@ -353,6 +353,46 @@ Awesome starts here
 
 ---
 
+*Wildcards*
+===========
+
+##São caracteres especias que têm um significado diferente do seu "literal"
+
+* "*" - qualquer caractere, qualquer número de vezes
+* "?" - qualquer caractere, uma vez
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+``$ ls D*``
+
+``$ cp *.fasta outro/diretorio/qualquer``
+
+---
+
+*Redirects*
+===========
+
+##É usado para redirecionar o *output* de um programa para um ficheiro.
+
+##Pode ser feito de várias formas, mas as mais simples são estas:
+
+<div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
+
+* ``$ ls -l > ficheiro.txt`` - cria um fichiero novo e escreve lá
+* ``$ ls -l >> ficheiro.txt`` - começa a escrever no final do ficheiro
+
+##É claro que podemos combinar diversas ferramentas para obter resultados interessantes...
+
+* ``$ cat ficheiro.fasta | grep ">"  > nomes_das_sequencias.txt``
+
+##Ou melhor ainda:
+
+* ``$ cat ficheiro.fasta |grep ">" | sed 's/>//g' > nomes_das_sequencias2.txt``
+
+##O primeiro a descobrir o que isto faz ganha uma bolacha!
+
+---
+
 Acesso remoto
 =============
 
