@@ -4,7 +4,7 @@ Linux shell 101
 ![454](assets/linux.jpg)
 
 ##<center>Francisco Pina Martins</center>
-###<center>24/10/2013</center>
+###<center>21/10/2014</center>
 
 ---
 
@@ -232,8 +232,8 @@ Variáveis de ambiente e  outros *goodies*
 
 	!bash
 	du -sm *
-	du -sm *| sort
-	du -sm *| sort -r
+	du -sm *| sort -rk 2
+	du -sm *| sort -n
 
 ##As possibilidades são ilimitadas!
 
@@ -345,7 +345,7 @@ Awesome starts here
 
 ``$ less ficheiro.fasta``
 
-##Usem o "q" para sair do ``less``
+##Usem a tecla "q" para sair do ``less``
 
 ##O ``vim`` dava sozinho para mais que uma so aula
 
