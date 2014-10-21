@@ -482,7 +482,7 @@ A vossa vez!
 * Usem também o "BLAST++" (têm de o instalar localmente! Está no site do NCBI)
 * A plataforma é GNU/Linux x86_64 (64bit)
 * Leiam a documentação dos programas!
-* Se não tiverem sequencias podem encontrar um exemplo aqui: http://odin.fc.ul.pt/bcg/exemplos/sequencias.fasta
+* Se não tiverem sequencias podem encontrar um exemplo aqui: https://dl.dropboxusercontent.com/u/929646/linux-shell-101/exemplos/sequencias.fasta
 
 ---
 
