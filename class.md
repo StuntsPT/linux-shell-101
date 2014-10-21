@@ -332,7 +332,7 @@ Awesome starts here
 
 #Ferramentas mais avançadas.
 
-## ``grep sed cat less vim nano``
+## ``grep sed cat less vim nano git``
 
 <div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
@@ -348,10 +348,11 @@ Awesome starts here
 
 ##Usem a tecla "q" para sair do ``less``
 
-##O ``vim`` dava sozinho para mais que uma so aula
+##O ``vim`` dava sozinho para mais que uma so aula.
 
 ``$ nano ficheiro.fasta``
 
+##O ``git`` sozinho dava para uma cadeira.
 ---
 
 *Wildcards*
