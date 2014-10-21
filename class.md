@@ -23,7 +23,7 @@ A shell e "porque é que eu preciso disto" ?
 ##Para que é que preciso dela?
 
 * Servidores HPC
-* Acesso remoto simples
+* Acesso remoto
 * Interface **simples**
 * Automatização e reprodutibilidade de processos
 
@@ -201,6 +201,7 @@ Permissões II
 ##Ou um valor "verbal"
 
 ``$ chmod +x ficheiro``
+
 ``$ chmod o-w ficheiro``
 
 ---
@@ -250,9 +251,9 @@ $PATH
 
 ``$ echo $PATH``
 
-* /bin/
-* /usr/bin/
-* /usr/local/bin/
+* /bin
+* /usr/bin
+* /usr/local/bin
 * ~/bin
 
 ## E se o programa não estiver no $PATH?
@@ -309,7 +310,7 @@ Mais sobre programas
 
 ##<font color="red">Mensagem a reter:</font> <font color="blue"> Os argumentos são separados por espaços e os espaços separam sempre argumentos!</font>
 
-##E espaços em nomes de ficheiros? Como em ``ficheiro com espacos.fasta``.
+##E espaços em nomes de ficheiros? Como em "``ficheiro com espacos.fasta``".
 
 ##Os caracteres especiais têm de ser "escapados":
 

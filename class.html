@@ -58,7 +58,7 @@
             
             <section><p><img alt="454" src="assets/linux.jpg" /></p>
 <h2><center>Francisco Pina Martins</center></h2>
-<h3><center>24/10/2013</center></h3></section>
+<h3><center>21/10/2014</center></h3></section>
             
           </div>
           <div class="presenter_notes">
@@ -99,7 +99,7 @@
 <h2>Para que é que preciso dela?</h2>
 <ul>
 <li>Servidores HPC</li>
-<li>Acesso remoto simples</li>
+<li>Acesso remoto</li>
 <li>Interface <strong>simples</strong></li>
 <li>Automatização e reprodutibilidade de processos</li>
 </ul>
@@ -436,8 +436,8 @@
 <h2>... em trios de UGO (<font color="red">U</font>ser<font color="red">G</font>roup<font color="red">O</font>thers):</h2>
 <p><code>777 ou 755 ou 640</code></p>
 <h2>Ou um valor "verbal"</h2>
-<p><code>$ chmod +x ficheiro</code>
-<code>$ chmod o-w ficheiro</code></p></section>
+<p><code>$ chmod +x ficheiro</code></p>
+<p><code>$ chmod o-w ficheiro</code></p></section>
             
           </div>
           <div class="presenter_notes">
@@ -485,8 +485,8 @@
 <h2>Unix pipe <code>|</code></h2>
 <h2>Podemos "pipar" o resultado de um comando para outro</h2>
 <div class="highlight"><pre><span class="lineno">1</span> du -sm *
-<span class="lineno">2</span> du -sm *| sort
-<span class="lineno">3</span> du -sm *| sort -r
+<span class="lineno">2</span> du -sm *| sort -rk 2
+<span class="lineno">3</span> du -sm *| sort -n
 </pre></div>
 
 <h2>As possibilidades são ilimitadas!</h2></section>
@@ -527,9 +527,9 @@
 </ul>
 <p><code>$ echo $PATH</code></p>
 <ul>
-<li>/bin/</li>
-<li>/usr/bin/</li>
-<li>/usr/local/bin/</li>
+<li>/bin</li>
+<li>/usr/bin</li>
+<li>/usr/local/bin</li>
 <li>~/bin</li>
 </ul>
 <h2>E se o programa não estiver no $PATH?</h2>
@@ -614,7 +614,7 @@
 <h2>Exemplo de um argumento comum e extremamente importante</h2>
 <p><code>$ cp --help</code></p>
 <h2><font color="red">Mensagem a reter:</font> <font color="blue"> Os argumentos são separados por espaços e os espaços separam sempre argumentos!</font></h2>
-<h2>E espaços em nomes de ficheiros? Como em <code>ficheiro com espacos.fasta</code>.</h2>
+<h2>E espaços em nomes de ficheiros? Como em "<code>ficheiro com espacos.fasta</code>".</h2>
 <h2>Os caracteres especiais têm de ser "escapados":</h2>
 <p><code>$ cat ficheiro\ com\ espacos.fasta</code></p>
 <h2>Ou</h2>
@@ -685,7 +685,7 @@
 <p><code>$ grep "&gt;" ficheiro.fasta</code></p>
 <p><code>$ sed 's/&gt;/+/g' ficheiro.fasta</code></p>
 <p><code>$ less ficheiro.fasta</code></p>
-<h2>Usem o "q" para sair do <code>less</code></h2>
+<h2>Usem a tecla "q" para sair do <code>less</code></h2>
 <h2>O <code>vim</code> dava sozinho para mais que uma so aula</h2>
 <p><code>$ nano ficheiro.fasta</code></p></section>
             
