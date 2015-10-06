@@ -4,7 +4,7 @@ Linux shell 101
 ![454](assets/linux.jpg)
 
 ##<center>Francisco Pina Martins</center>
-###<center>21/10/2014</center>
+###<center>06/10/2015</center>
 
 ---
 
@@ -122,11 +122,11 @@ Navegação II
 ============
 
 1. Como é que eu crio um novo diretório (pasta)?
-2. Como é que eu apago um novo diretório?
+2. Como é que eu apago um diretório?
 3. Como é que eu crio um novo ficheiro?
 4. Como é que eu copio um ficheiro?
 5. Como é que eu movo um ficheiro?
-6. Como é que eu apago um ficheiro
+6. Como é que eu apago um ficheiro?
 
 <div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
@@ -247,7 +247,7 @@ $PATH
 
 <div style="float: right"><img src="assets/shell_prompt_small.gif" /></div>
 
-* É boa prática colocar os programas num localização no $PATH
+* É boa prática colocar os programas numa localização no $PATH
 
 ``$ echo $PATH``
 
@@ -469,20 +469,35 @@ Descomprimir ficheiros
 A vossa vez!
 ============
 
-1. Descarregem sequencias do NCBI (ou gerem as vossas, como queiram)
-2. Façam um BLASTX local no servidor odin.fc.ul.pt contra uma base de dados de proteínas (/home/databases/nr/)
-3. Gerem o output HTML e abram-no no vosso browser
+###Acedam ao servidor "odin.fc.ul.pt"
+
 
 ##username: alunos
 
 ##password: nitUkDagwi
 
-* Tudo o que necessitam está nestes slides
-* Usem o programa "blast2" (está instalado e acessivel no $PATH)
-* Usem também o "BLAST++" (têm de o instalar localmente! Está no site do NCBI)
-* A plataforma é GNU/Linux x86_64 (64bit)
-* Leiam a documentação dos programas!
-* Se não tiverem sequencias podem encontrar um exemplo aqui: https://dl.dropboxusercontent.com/u/929646/linux-shell-101/exemplos/sequencias.fasta
+1. Criem um diretório com o vosso nome no "home dir" 
+2. Descarreguem as sequencias de wget http://odin.fc.ul.pt/bcg/exemplos/sequencias.fasta
+3. Filtrem este ficheiro para obterem:
+	* Uma lista com os *Assession numbers* das sequências mitocondriais
+		* Quantas são?
+	* Uma lista com os *Assession numbers* das sequências nucleares
+		* Quantas são?
+	* Cookie points extra para quem conseguir colocar as duas listas num só ficheiro em 2 colunas.
+
+---
+
+A vossa vez!
+============
+
+
+4. O Ficheiro *FASTA* tem a sequência em multiplas linhas. Passem tudo para a mesma linha (eg. uma linha com o nome e outra com a sequência)
+
+
+##Tudo o que necessitam está nestes slides
+##Usem os seguintes programas:
+		
+## ``grep, sed, wc``
 
 ---
 
