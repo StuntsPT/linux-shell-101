@@ -477,7 +477,7 @@ A vossa vez!
 ##password: nitUkDagwi
 
 1. Criem um diretório com o vosso nome no "home dir" 
-2. Descarreguem as sequencias de wget http://odin.fc.ul.pt/bcg/exemplos/sequencias.fasta
+2. Descarreguem as sequencias de http://odin.fc.ul.pt/bcg/exemplos/sequencias.fasta
 3. Filtrem este ficheiro para obterem:
 	* Uma lista com os *Assession numbers* das sequências mitocondriais
 		* Quantas são?
@@ -491,13 +491,18 @@ A vossa vez!
 ============
 
 
-4. O Ficheiro *FASTA* tem a sequência em multiplas linhas. Passem tudo para a mesma linha (eg. uma linha com o nome e outra com a sequência)
+4.Descarregem a(s) lista(s) para o vosso PC.
 
+</br>
+
+5. O ficheiro "test.structure" tem um problema com as labels. Os individuos identificados como "Arg" devem ser colocados na 4ª posição (a seguir aos "Cor" e antes dos "Haz"). Façam essa alteração.
 
 ##Tudo o que necessitam está nestes slides
 ##Usem os seguintes programas:
-		
-## ``grep, sed, wc``
+
+</br>	
+	
+## ``ssh, grep, sed, wc, (paste), scp, sort``
 
 ---
 
